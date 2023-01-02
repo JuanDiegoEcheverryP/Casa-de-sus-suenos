@@ -1,0 +1,198 @@
+
+#add {
+    -fx-background-color: #fab002;
+    -fx-text-fill: #222;
+    -fx-font-family: "Arial Bold";
+}
+
+#add:hover {
+    -fx-cursor: hand;
+    -fx-background-color: #fab81e;
+}
+
+#add:pressed {
+    -fx-cursor: hand;
+    -fx-background-color: #de9c00;
+}
+
+#varTipoTarjeta {
+    -fx-background-color: none;
+    -fx-border-color: #aaaaaa;
+    -fx-text-fill: #000;
+    -fx-font-family: "Arial Bold";
+    -fx-border-color: #fab002;
+    -fx-border-width: 1.5px;
+    -fx-border-style: hidden hidden solid hidden;
+}
+
+#varTipoTarjeta: hover {
+    -fx-cursor: hand;
+    -fx-background-color: #F3F3F3;
+    -fx-color: #FFFFFF;
+}
+
+#varTipoTarjeta: focused {
+    -fx-border-style: hidden hidden solid solid;
+    -fx-color: #555555;
+    -fx-background-color: #FFFFFF;
+}
+
+#varTipoTarjeta .label {
+     -fx-text-fill: #666;
+}
+
+#varTipoTarjeta .label: hover {
+     -fx-background-color: #F3F3F3;
+     -fx-text-fill: #666;
+}
+
+#test {
+-fx-font-family: "Arial Bold";
+-fx-text-fill: #666;
+}
+
+* {
+	-fx-primary-color: #fab002;
+	-fx-secondary-color: #c98e02;
+
+	-fx-focus-color: -fx-secondary-color;
+}
+
+.spinner {
+-fx-border-color:#fab002;
+-fx-border-radius: 5px;
+}
+
+.spinner .increment-arrow-button,
+.spinner .decrement-arrow-button {
+	-fx-background-color: -fx-primary-color;
+	-fx-background-radius: 0;
+}
+.spinner .increment-arrow-button:hover,
+.spinner .decrement-arrow-button:hover {
+	-fx-background-color: -fx-secondary-color;
+}
+.spinner .increment-arrow-button:hover:pressed,
+.spinner .decrement-arrow-button:hover:pressed,
+.spinner .increment-arrow-button:pressed,
+.spinner .decrement-arrow-button:pressed {
+	-fx-background-color: -fx-secondary-color;
+}
+.spinner .increment-arrow-button .increment-arrow,
+.spinner .decrement-arrow-button .decrement-arrow {
+	-fx-background-color: white;
+}
+
+
+
+
+#actualizar: pressed {
+    -fx-border-color: #006600;
+}
+
+#actualizar {
+    -fx-background-color: #009900;
+    -fx-text-fill: white;
+}
+
+#actualizar:hover {
+    -fx-cursor: hand;
+    -fx-background-color: #02bd02;
+}
+
+#colEdit > Button: clicked {
+-fx-background-color: #9e021d;
+}
+
+#colEdit > Button {
+    -fx-background-color: #D90429;
+    -fx-text-fill: white;
+}
+
+#colEdit > Button:hover {
+    -fx-cursor: hand;
+    -fx-background-color: #c7060d;
+}
+
+.table-view * {
+    -fx-alignment: CENTER;
+    -fx-font-family: "Arial Bold";
+    -fx-cell-size: 30px;
+}
+
+#tablePersona * {
+    -fx-alignment: CENTER;
+}
+
+.table-view {
+    -fx-background-color: #fcc43f10;
+}
+
+.table-view .column-header-background .filler {
+    -fx-background-color: transparent;
+}
+
+.table-view .corner {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background{
+    -fx-background-color: linear-gradient(to bottom, #fab00284, #fcc43f44);
+    -fx-background-radius: 7px 7px 0px 0px;
+    -fx-background-insets: 0 11px 0 0;
+    -fx-padding: 0 0 5px 0;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+.table-view .table-cell{
+    -fx-border-color: #fab00214;
+    -fx-padding: 2 0 2 10px;
+}
+
+.table-row-cell: hover {
+    -fx-background-color: #93f9b981;
+    -fx-text-background-color: #d65d00;
+}
+
+.table-row-cell: odd{
+    -fx-background-color: #fab00234;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}
+
+.table-row-cell: even{
+    -fx-background-color: #fcc43f24;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}
+
+.table-view .virtual-flow .scroll-bar:vertical,
+.table-view .virtual-flow .scroll-bar:vertical .track,
+.table-view .virtual-flow .scroll-bar:vertical .track-background,
+.table-view .virtual-flow .scroll-bar:horizontal,
+.table-view .virtual-flow .scroll-bar:horizontal .track,
+.table-view .virtual-flow .scroll-bar:horizontal .track-background {
+    -fx-background-color: transparent;
+}
+
+.table-view .virtual-flow .scroll-bar .increment-button,
+.table-view .virtual-flow .scroll-bar .decrement-button {
+    -fx-opacity: 0;
+    -fx-padding: 2;
+}
+
+.table-view .virtual-flow .scroll-bar:vertical .thumb{
+    -fx-background-color:  linear-gradient(to bottom, #1dbbdd44, #93f9b944);
+}
+
+.table-view .virtual-flow .scroll-bar:horizontal .thumb {
+    -fx-background-color:  linear-gradient(to right, #1dbbdd44, #93f9b944);
+}
+
+.table-row-cell: highlighted {
+    -fx-background-color: #81c483;
+    -fx-background-radius: 15px;
+}

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.testvideo.loginController">
+   <Pane prefHeight="648" prefWidth="1152" style="-fx-padding: 40px; -fx-background-color: #ffffff; -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.8), 10, 0, 0, 0);">
+      <children>
+         <Pane layoutX="576.0" prefHeight="648.0" prefWidth="576.0" style="-fx-background-color: #D90429;">
+            <children>
+               <ImageView fitHeight="566.0" fitWidth="534.0" layoutX="42.0" layoutY="82.0">
+                  <image>
+                     <Image url="@loginBackground.png" />
+                  </image>
+               </ImageView>
+               <Label fx:id="tituloLogin" layoutX="91.0" layoutY="236.0" text="INICIO DE SESIÓN" textFill="WHITE">
+                  <font>
+                     <Font name="Arial Bold" size="26.0" />
+                  </font>
+               </Label>
+               <TextField fx:id="inicioSesiosnUsuario" layoutX="13.0" layoutY="10.0" maxHeight="5.0" maxWidth="5.0" minHeight="5.0" minWidth="5.0" prefHeight="5.0" prefWidth="5.0">
+                  <font>
+                     <Font name="System Bold" size="14.0" />
+                  </font>
+               </TextField>
+               <TextField fx:id="inicioSesionUsuario" layoutX="89.0" layoutY="281.0" prefHeight="25.0" prefWidth="299.0" promptText="Usuario" styleClass="loginField">
+                  <font>
+                     <Font name="System Bold" size="14.0" />
+                  </font>
+                  <cursor>
+                     <Cursor fx:constant="TEXT" />
+                  </cursor></TextField>
+               <PasswordField fx:id="inicioSesionContrasena" layoutX="91.0" layoutY="324.0" prefHeight="25.0" prefWidth="298.0" promptText="Contraseña" styleClass="loginField">
+                  <cursor>
+                     <Cursor fx:constant="TEXT" />
+                  </cursor>
+                  <font>
+                     <Font name="System Bold" size="14.0" />
+                  </font></PasswordField>
+               <Button fx:id="inicioSesionIngresar" layoutX="91.0" layoutY="375.0" mnemonicParsing="false" onAction="#submit" text="Ingresar">
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor>
+                  <font>
+                     <Font size="14.0" />
+                  </font></Button>
+               <Label fx:id="test" layoutX="179.0" layoutY="381.0" prefHeight="18.0" prefWidth="374.0" textFill="WHITE" underline="true" visible="false">
+                  <font>
+                     <Font name="Comic Sans MS Bold" size="12.0" />
+                  </font></Label>
+            </children>
+            <effect>
+               <DropShadow height="0.0" radius="12.81" width="53.24">
+                  <color>
+                     <Color red="0.6315789222717285" />
+                  </color>
+               </DropShadow>
+            </effect>
+         </Pane>
+         <ImageView fitHeight="189.0" fitWidth="291.0" layoutX="141.0" layoutY="245.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@logo.png" />
+            </image>
+            <cursor>
+               <Cursor fx:constant="CROSSHAIR" />
+            </cursor>
+         </ImageView>
+         <HBox fx:id="navBar" alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="1152.0">
+            <children>
+               <ImageView fx:id="minimize" fitHeight="11.0" fitWidth="11.0" onMouseClicked="#minimizarVentana" pickOnBounds="true" preserveRatio="true">
+                  <HBox.margin>
+                     <Insets left="15.0" />
+                  </HBox.margin>
+                  <image>
+                     <Image url="@../navBar/-Icon.png" />
+                  </image>
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor>
+               </ImageView>
+               <ImageView fx:id="expand" fitHeight="11.0" fitWidth="11.0" pickOnBounds="true" preserveRatio="true">
+                  <HBox.margin>
+                     <Insets left="15.0" />
+                  </HBox.margin>
+                  <image>
+                     <Image url="@../navBar/oIcon.png" />
+                  </image>
+                  <cursor>
+                     <Cursor fx:constant="WAIT" />
+                  </cursor>
+               </ImageView>
+               <ImageView fx:id="close" fitHeight="12.0" fitWidth="11.0" onMouseClicked="#cerrarVentana" pickOnBounds="true" preserveRatio="true">
+                  <HBox.margin>
+                     <Insets left="15.0" right="10.0" />
+                  </HBox.margin>
+                  <image>
+                     <Image url="@../navBar/xIcon.png" />
+                  </image>
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor>
+               </ImageView>
+            </children>
+            <padding>
+               <Insets bottom="5.0" top="5.0" />
+            </padding></HBox>
+      </children></Pane>
+   <stylesheets>
+      <URL value="@login.css" />
+      <URL value="@../navBar/top.css" />
+   </stylesheets>
+</VBox>

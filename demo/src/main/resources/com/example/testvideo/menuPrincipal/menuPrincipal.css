@@ -1,0 +1,23 @@
+#opcionesContenedor Button {
+    -fx-background-color: #EEEEEE;
+    -fx-background-radius: 40px;
+    -fx-border-radius: 40px;
+}
+
+#opcionesContenedor Button: hover {
+    -fx-background-color: #CCCCCC;
+    -fx-cursor: hand;
+}
+
+#opcionesContenedor Button: pressed {
+    -fx-background-color: #AAAAAA;
+    -fx-cursor: hand;
+}
+
+#userImage, #userName {
+    -fx-background-color: none;
+}
+
+#userImage, #userName: hover {
+    -fx-background-color: #e3193c;
+}

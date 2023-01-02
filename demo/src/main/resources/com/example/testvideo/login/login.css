@@ -1,0 +1,49 @@
+.loginField {
+    -fx-background-color: #D90429;
+    -fx-prompt-text-fill: #DDDDDD;
+    -fx-border-color: #FFFFFF;
+    -fx-text-fill: #FFFFFF;
+    -fx-border-style: hidden hidden solid hidden;
+}
+
+#inicioSesionIngresar {
+    -fx-background-color: #D90429;
+    -fx-border-color: #FFFFFF;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 12px;
+    -fx-text-fill: #FFFFFF;
+}
+
+#inicioSesionIngresar {
+    -fx-background-color: #D90429;
+    -fx-border-color: #FFFFFF;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 15px;
+    -fx-text-fill: #FFFFFF;
+}
+
+/* eventos */
+
+.loginField: hover {
+    -fx-background-color: #d92040;
+    -fx-color: #FFFFFF;
+}
+
+.loginField: focused {
+    -fx-border-style: hidden hidden solid solid;
+    -fx-color: #FFFFFF;
+}
+
+#inicioSesionIngresar: hover, #inicioSesionIngresar: focused {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #D90429;
+    -fx-text-fill: #D90429;
+}
+
+#inicioSesionIngresar: pressed {
+    -fx-background-color: #000000;
+    -fx-border-color: #FFFFFF;
+    -fx-text-fill: #FFFFFF;
+}

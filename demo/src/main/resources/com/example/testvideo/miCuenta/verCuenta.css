@@ -1,0 +1,51 @@
+.accordion > .titled-pane > .title {
+    -fx-background-color: null;
+    -fx-border-color: null;
+}
+
+.titled-pane > *.content {
+  -fx-background-color: null;
+  -fx-border-color: null;
+
+}
+
+#actualizarButton {
+    -fx-background-color: #009900;
+    -fx-border-color: #007700;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+}
+
+#eliminarButton {
+    -fx-background-color: #DD0000;
+    -fx-border-color: #770000;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+}
+
+.text-field {
+    -fx-background-color: #FFFFFF;
+    -fx-prompt-text-fill: #aaaaaa;
+    -fx-border-color: #aaaaaa;
+    -fx-text-fill: #444;
+    -fx-font-family: "Arial Bold";
+    -fx-border-style: hidden hidden solid hidden;
+}
+
+#campoTipoDocumento, #campoTipoCuenta, #campoFecha, #campoNombreUsuario {
+-fx-text-fill: #888;
+-fx-font-family: "Arial Bold";
+}
+
+/* eventos */
+
+.text-field: hover {
+    -fx-background-color: #F3F3F3;
+    -fx-color: #FFFFFF;
+}
+
+.text-field: focused {
+    -fx-border-style: hidden hidden solid solid;
+    -fx-color: #555555;
+    -fx-background-color: #FFFFFF;
+}

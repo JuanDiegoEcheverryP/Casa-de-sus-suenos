@@ -1,0 +1,19 @@
+/**
+#panel {
+  -fx-background-color: #fff0f0;
+  -fx-border-style: groove;;
+}
+**/
+Button: clicked {
+-fx-background-color: #6e0004;
+}
+
+Button {
+    -fx-background-color: #fc141c;
+    -fx-text-fill: white;
+}
+
+Button:hover {
+    -fx-cursor: hand;
+    -fx-background-color: #c7060d;
+}

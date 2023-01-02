@@ -1,0 +1,9 @@
+#toMenuPrincipal {
+    -fx-background-color: #D90429;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+#toMenuPrincipal:hover {
+    -fx-background-color: #e3193c;
+}
